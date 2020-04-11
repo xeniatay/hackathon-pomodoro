@@ -1,0 +1,12 @@
+.task-prompt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.button {
+	align-self: center;
+	margin-top: 1em;
+	width: 60%;
+	font-size: 2em;
+}

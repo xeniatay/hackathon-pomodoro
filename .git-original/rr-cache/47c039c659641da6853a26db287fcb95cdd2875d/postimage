@@ -1,0 +1,92 @@
+import React, { Component } from "react";
+import "./App.css";
+
+import TaskPrompt from "./components/TaskPrompt";
+import WorkTimer from "./components/WorkTimer";
+import ResultTracker from "./components/ResultTracker";
+import ActivityFeed from "./components/ActivityFeed";
+
+const STATUS = { PROMPT: "prompt", WORK: "work", BREAK: "break" };
+
+export default class App extends Component {
+	constructor(props) {
+		super(props);
+
+		const mockTasks = [
+			{
+				startedTime: new Date().toISOString(),
+				description: "Desc blah",
+				completed: null
+			},
+			{
+				startedTime: new Date().toISOString(),
+				description: "Desc sdfdf",
+				completed: true
+			},
+			{
+				startedTime: new Date().toISOString(),
+				description: "Desc sdfsdf",
+				completed: false
+			},
+			{
+				startedTime: new Date().toISOString(),
+				description: "Desc sdfdsf",
+				completed: true
+			},
+			{
+				startedTime: new Date().toISOString(),
+				description: "Desc sdfsdf",
+				completed: true
+			}
+		];
+
+		this.state = {
+			status: STATUS.PROMPT,
+			task: {
+				startedTime: null,
+				description: "",
+				completed: null
+			},
+			taskHistory: mockTasks
+		};
+	}
+
+	onStart = e => {
+		this.setState({
+			status: STATUS.WORK,
+			task: { ...this.state.task, startedTime: new Date().toISOString() }
+		});
+	};
+
+	onTaskChange = e => {
+		this.setState({
+			task: { ...this.state.task, description: e.target.value }
+		});
+	};
+
+	render() {
+		const { status, task, taskHistory } = this.state;
+
+		return (
+			<div className="App">
+				{status === STATUS.PROMPT ? (
+					<TaskPrompt onTaskChange={this.onTaskChange} onStart={this.onStart} />
+				) : null}
+				{status === STATUS.WORK ? (
+					<React.Fragment>
+						<WorkTimer
+							task={task}
+							onAbort={
+								// Break streak
+								() => this.setState({ status: STATUS.BREAK })
+							}
+							onComplete={() => this.setState({ status: STATUS.BREAK })}
+						/>
+					</React.Fragment>
+				) : null}
+				{status === STATUS.BREAK ? <ResultTracker /> : null}
+				<ActivityFeed tasks={taskHistory} />
+			</div>
+		);
+	}
+}

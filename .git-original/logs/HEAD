@@ -1,0 +1,54 @@
+0000000000000000000000000000000000000000 c5b4969d641368f2714a2b63a895a909ace1b76e Xenia Tay <xeniatzy@gmail.com> 1579703487 -0500	clone: from git@github.com:Openfolio/hackathon-xenia.git
+c5b4969d641368f2714a2b63a895a909ace1b76e 4e516d922ceba4a723556b609b11fe9226f8b9a8 Xenia Tay <xeniatzy@gmail.com> 1579703671 -0500	commit: Create react app
+4e516d922ceba4a723556b609b11fe9226f8b9a8 59ff37791470ab326f8d3c8630c23fb65c1dcc51 Xenia Tay <xeniatzy@gmail.com> 1579705013 -0500	commit: Component structure
+59ff37791470ab326f8d3c8630c23fb65c1dcc51 de86debb6f753cb818fc5b054f532682d596d66a Xenia Tay <xeniatzy@gmail.com> 1579708478 -0500	commit: Task prompt and timer
+de86debb6f753cb818fc5b054f532682d596d66a 187cfc1615fecdddefd8052e8cc341a98b1cc44e Xenia Tay <xeniatzy@gmail.com> 1579709039 -0500	commit: Persist task from TaskPrompt
+187cfc1615fecdddefd8052e8cc341a98b1cc44e 187cfc1615fecdddefd8052e8cc341a98b1cc44e Xenia Tay <xeniatzy@gmail.com> 1579709401 -0500	reset: moving to HEAD
+187cfc1615fecdddefd8052e8cc341a98b1cc44e 607ca4725e3666bfeb46553e06c3c444ef7a735f Xenia Tay <xeniatzy@gmail.com> 1579709404 -0500	pull origin master: Fast-forward
+607ca4725e3666bfeb46553e06c3c444ef7a735f 7882509765d959063863d0e3bca8c06d47847167 Xenia Tay <xeniatzy@gmail.com> 1579709774 -0500	commit: Add break step and stop logic
+7882509765d959063863d0e3bca8c06d47847167 7882509765d959063863d0e3bca8c06d47847167 Xenia Tay <xeniatzy@gmail.com> 1579710037 -0500	reset: moving to HEAD
+7882509765d959063863d0e3bca8c06d47847167 6a44d121c4e81b6c1e41a85e71c8d15f6bbc299c Xenia Tay <xeniatzy@gmail.com> 1579710046 -0500	pull origin master: Fast-forward
+6a44d121c4e81b6c1e41a85e71c8d15f6bbc299c 5cfe050b0d829bec1de4f7879efcf14bf9f03370 Xenia Tay <xeniatzy@gmail.com> 1579710253 -0500	commit: Update result tracker logic
+5cfe050b0d829bec1de4f7879efcf14bf9f03370 47db89cffa566b6d58031d37d0cc462e8d9ff2c2 Xenia Tay <xeniatzy@gmail.com> 1579711418 -0500	commit: Add badge
+47db89cffa566b6d58031d37d0cc462e8d9ff2c2 5cfe050b0d829bec1de4f7879efcf14bf9f03370 Xenia Tay <xeniatzy@gmail.com> 1579711444 -0500	reset: moving to HEAD~1
+5cfe050b0d829bec1de4f7879efcf14bf9f03370 5cfe050b0d829bec1de4f7879efcf14bf9f03370 Xenia Tay <xeniatzy@gmail.com> 1579711447 -0500	reset: moving to HEAD
+5cfe050b0d829bec1de4f7879efcf14bf9f03370 505691344901a0162ad03072db04bf3749078a54 Xenia Tay <xeniatzy@gmail.com> 1579711453 -0500	pull origin master: Fast-forward
+505691344901a0162ad03072db04bf3749078a54 248890868ac26cb3fd75c5cd8e9cc2fe5222b253 Xenia Tay <xeniatzy@gmail.com> 1579711464 -0500	commit: Add badge
+248890868ac26cb3fd75c5cd8e9cc2fe5222b253 dedd57cbb87af5b6eb560b1ca1630fffa1297534 Xenia Tay <xeniatzy@gmail.com> 1579712306 -0500	commit: Add streak
+dedd57cbb87af5b6eb560b1ca1630fffa1297534 dedd57cbb87af5b6eb560b1ca1630fffa1297534 Xenia Tay <xeniatzy@gmail.com> 1579712622 -0500	reset: moving to HEAD
+dedd57cbb87af5b6eb560b1ca1630fffa1297534 dedd57cbb87af5b6eb560b1ca1630fffa1297534 Xenia Tay <xeniatzy@gmail.com> 1579713919 -0500	reset: moving to HEAD
+dedd57cbb87af5b6eb560b1ca1630fffa1297534 76dd5c4f2a809141f4fe860c3b9a989d345a0fe7 Xenia Tay <xeniatzy@gmail.com> 1579713922 -0500	pull origin master: Fast-forward
+76dd5c4f2a809141f4fe860c3b9a989d345a0fe7 35a6b9734fd8ba0dff65205a8e006e34ac06d995 Xenia Tay <xeniatzy@gmail.com> 1579716506 -0500	commit: Global styling
+35a6b9734fd8ba0dff65205a8e006e34ac06d995 35a6b9734fd8ba0dff65205a8e006e34ac06d995 Xenia Tay <xeniatzy@gmail.com> 1579717421 -0500	reset: moving to HEAD
+35a6b9734fd8ba0dff65205a8e006e34ac06d995 436de0ef3b57effe016bc4aa5565e9f09554f6fd Xenia Tay <xeniatzy@gmail.com> 1579717422 -0500	pull origin master: Fast-forward
+436de0ef3b57effe016bc4aa5565e9f09554f6fd affbb6729ff5a912f79158ee694277834d9b89a1 Xenia Tay <xeniatzy@gmail.com> 1579718126 -0500	commit: Go from break to work
+affbb6729ff5a912f79158ee694277834d9b89a1 436de0ef3b57effe016bc4aa5565e9f09554f6fd Xenia Tay <xeniatzy@gmail.com> 1579718139 -0500	reset: moving to HEAD~1
+436de0ef3b57effe016bc4aa5565e9f09554f6fd 436de0ef3b57effe016bc4aa5565e9f09554f6fd Xenia Tay <xeniatzy@gmail.com> 1579718143 -0500	reset: moving to HEAD
+436de0ef3b57effe016bc4aa5565e9f09554f6fd 19c17d1d1193eec683cbd9bdc3b2ff7283bfdebf Xenia Tay <xeniatzy@gmail.com> 1579718146 -0500	pull origin master: Fast-forward
+19c17d1d1193eec683cbd9bdc3b2ff7283bfdebf c40da36579051d5b336f3b13ccb14fbf6d68e7c9 Xenia Tay <xeniatzy@gmail.com> 1579718151 -0500	commit: Go from break to work
+c40da36579051d5b336f3b13ccb14fbf6d68e7c9 ec5fe647fafc4bde3e75b6c581619e5367f2b6ea Xenia Tay <xeniatzy@gmail.com> 1579721411 -0500	commit: Initial styling
+ec5fe647fafc4bde3e75b6c581619e5367f2b6ea ec5fe647fafc4bde3e75b6c581619e5367f2b6ea Xenia Tay <xeniatzy@gmail.com> 1579723715 -0500	reset: moving to HEAD
+ec5fe647fafc4bde3e75b6c581619e5367f2b6ea 06055ab34b159523333852cdeba273f1e1b5de9d Xenia Tay <xeniatzy@gmail.com> 1579723717 -0500	pull origin master: Fast-forward
+06055ab34b159523333852cdeba273f1e1b5de9d 02f0e64244822f024e6c320d3252bc5850abaf43 Xenia Tay <xeniatzy@gmail.com> 1579723725 -0500	commit: More styling!
+02f0e64244822f024e6c320d3252bc5850abaf43 02f0e64244822f024e6c320d3252bc5850abaf43 Xenia Tay <xeniatzy@gmail.com> 1579724357 -0500	reset: moving to HEAD
+02f0e64244822f024e6c320d3252bc5850abaf43 e6dbe968d3aabf71a3322a0e5b1909d3d225ed6f Xenia Tay <xeniatzy@gmail.com> 1579724360 -0500	pull origin master: Fast-forward
+e6dbe968d3aabf71a3322a0e5b1909d3d225ed6f 84c5657fcab13974033fe3cc975ab1c8d1334762 Xenia Tay <xeniatzy@gmail.com> 1579724366 -0500	commit: More styling!
+84c5657fcab13974033fe3cc975ab1c8d1334762 5d00a9d6fc1249ff2d04055f5de0430ae041decd Xenia Tay <xeniatzy@gmail.com> 1579725914 -0500	commit: More styling!
+5d00a9d6fc1249ff2d04055f5de0430ae041decd 5d00a9d6fc1249ff2d04055f5de0430ae041decd Xenia Tay <xeniatzy@gmail.com> 1579725943 -0500	reset: moving to HEAD
+5d00a9d6fc1249ff2d04055f5de0430ae041decd 84c5657fcab13974033fe3cc975ab1c8d1334762 Xenia Tay <xeniatzy@gmail.com> 1579726082 -0500	reset: moving to HEAD~1
+84c5657fcab13974033fe3cc975ab1c8d1334762 84c5657fcab13974033fe3cc975ab1c8d1334762 Xenia Tay <xeniatzy@gmail.com> 1579726088 -0500	reset: moving to HEAD
+84c5657fcab13974033fe3cc975ab1c8d1334762 59c762d2b4c49779786a5c1488bcaf5417cb4e71 Xenia Tay <xeniatzy@gmail.com> 1579726092 -0500	pull origin master: Fast-forward
+59c762d2b4c49779786a5c1488bcaf5417cb4e71 dbd25d6a5987f3e21785f7886b32e8f42408ac51 Xenia Tay <xeniatzy@gmail.com> 1579726098 -0500	commit: More styling!
+dbd25d6a5987f3e21785f7886b32e8f42408ac51 dbd25d6a5987f3e21785f7886b32e8f42408ac51 Xenia Tay <xeniatzy@gmail.com> 1579726284 -0500	reset: moving to HEAD
+dbd25d6a5987f3e21785f7886b32e8f42408ac51 7235174ddf22fc2b7d67936bf7c6a4e9bd35e190 Xenia Tay <xeniatzy@gmail.com> 1579726286 -0500	pull origin master: Fast-forward
+7235174ddf22fc2b7d67936bf7c6a4e9bd35e190 7235174ddf22fc2b7d67936bf7c6a4e9bd35e190 Xenia Tay <xeniatzy@gmail.com> 1579729113 -0500	reset: moving to HEAD
+7235174ddf22fc2b7d67936bf7c6a4e9bd35e190 41307a1c1da3c202a11f5c0d2f074c9d6a908351 Xenia Tay <xeniatzy@gmail.com> 1579729120 -0500	pull origin master: Fast-forward
+41307a1c1da3c202a11f5c0d2f074c9d6a908351 757d683cb5b8d2e5c4397fcad1767f2c93d22548 Xenia Tay <xeniatzy@gmail.com> 1579729130 -0500	commit: Autosave settings
+757d683cb5b8d2e5c4397fcad1767f2c93d22548 5d3384287839b3219419f73e50c295de0f75c1ad Xenia Tay <xeniatzy@gmail.com> 1579729249 -0500	pull origin master: Fast-forward
+5d3384287839b3219419f73e50c295de0f75c1ad 5d3384287839b3219419f73e50c295de0f75c1ad Xenia Tay <xeniatzy@gmail.com> 1579729759 -0500	reset: moving to HEAD
+5d3384287839b3219419f73e50c295de0f75c1ad 5f957f283d8695260f35064f8501ef6b9cd8ea8c Xenia Tay <xeniatzy@gmail.com> 1579729762 -0500	pull origin master: Fast-forward
+5f957f283d8695260f35064f8501ef6b9cd8ea8c e5e73955e66ae01339bdd0d3be49a511d83ff0ce Xenia Tay <xeniatzy@gmail.com> 1579729770 -0500	commit: Polish
+e5e73955e66ae01339bdd0d3be49a511d83ff0ce 59084fb5254d614b71c2b23fc6a0e8c596ad7537 Xenia Tay <xeniatzy@gmail.com> 1579730038 -0500	pull origin master: Fast-forward
+59084fb5254d614b71c2b23fc6a0e8c596ad7537 ea41721662bd3ed2ad8dc460cf1904f85c55e724 Xenia Tay <xeniatzy@gmail.com> 1579730331 -0500	pull origin master: Fast-forward
+ea41721662bd3ed2ad8dc460cf1904f85c55e724 4a3b6044dccb0bf5a1e8389010f27a8952dd0a6e Xenia Tay <xeniatzy@gmail.com> 1579730531 -0500	pull origin master: Fast-forward
+4a3b6044dccb0bf5a1e8389010f27a8952dd0a6e 7c7c8af6c8df409e25b12da4baf07fdce5a331c1 Xenia Tay <xeniatzy@gmail.com> 1579730737 -0500	commit: Polish

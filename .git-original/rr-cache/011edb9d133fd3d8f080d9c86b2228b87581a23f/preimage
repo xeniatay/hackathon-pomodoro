@@ -1,0 +1,159 @@
+import React, { Component } from "react";
+import "./App.css";
+
+import StreakCounter from "./components/StreakCounter";
+import TaskPrompt from "./components/TaskPrompt";
+import WorkTimer from "./components/WorkTimer";
+import ResultTracker from "./components/ResultTracker";
+import ActivityFeed from "./components/ActivityFeed";
+import { addTaskToSavedHistory, getSavedHistory } from "./utilities";
+import SettingsForm from "./components/SettingsForm";
+
+const STATUS = { PROMPT: "prompt", WORK: "work", BREAK: "break" };
+
+export default class App extends Component {
+	constructor(props) {
+		super(props);
+
+		const taskHistory = getSavedHistory();
+
+		this.state = {
+			status: STATUS.PROMPT,
+			task: {
+				startedTime: null,
+				description: "",
+				completed: null,
+				result: ""
+			},
+			taskHistory
+		};
+	}
+
+	onStart = e => {
+		this.setState({
+			status: STATUS.WORK,
+			task: { ...this.state.task, startedTime: new Date().toISOString() }
+		});
+	};
+
+	onTaskChange = e => {
+		this.setState({
+			task: { ...this.state.task, description: e.target.value }
+		});
+	};
+
+	handleAbort = () => {
+		// break streak
+		this.setState(state => {
+			const updatedTask = {
+				...state.task,
+				completed: false
+			};
+			addTaskToSavedHistory(updatedTask);
+			const taskHistory = [...state.taskHistory, updatedTask];
+			return {
+				status: STATUS.BREAK,
+				taskHistory
+			};
+		});
+	};
+
+	handleComplete = () => {
+		this.setState(state => {
+			const updatedTask = {
+				...state.task,
+				completed: true
+			};
+			addTaskToSavedHistory(updatedTask);
+			const taskHistory = [...state.taskHistory, updatedTask];
+			return {
+				status: STATUS.BREAK,
+				taskHistory
+			};
+		});
+	};
+
+	onTaskResultChange = e => {
+		this.setState({
+			task: { ...this.state.task, result: e.target.value }
+		});
+	};
+
+	handleSettingsSubmit = values => {
+		console.log("Saving settings");
+		console.log(values);
+	};
+
+	render() {
+		const { status, task, taskHistory } = this.state;
+		let content;
+
+		switch (status) {
+			case STATUS.WORK:
+				content = (
+					<WorkTimer
+						task={task}
+<<<<<<<
+=======
+						taskHistory={taskHistory}
+>>>>>>>
+						onAbort={this.handleAbort}
+						onComplete={this.handleComplete}
+					/>
+				);
+				break;
+			case STATUS.PROMPT:
+				content = <TaskPrompt onTaskChange={this.onTaskChange} onStart={this.onStart} />;
+				break;
+			case STATUS.BREAK:
+<<<<<<<
+				content = (
+					<ResultTracker
+						onTaskResultChange={this.onTaskResultChange}
+						onComplete={() => this.setState({ status: STATUS.PROMPT })}
+					/>
+				);
+=======
+				content = <ResultTracker />;
+>>>>>>>
+				break;
+			default:
+				break;
+		}
+
+		return (
+			<div className="App">
+				<header className="header">
+					<div className="title">Po-po-po-pomodoro</div>
+					{/* <Badge text={status === STATUS.BREAK ? "break" : "work"} /> */}
+					<StreakCounter taskHistory={taskHistory} />
+				</header>
+				<div className="wrapper">
+<<<<<<<
+					<div className="content">
+						<>
+							{content}
+							<SettingsForm
+								breakSeconds={"30"}
+								taskSeconds={"300"}
+								streakGoal={"4"}
+								onSubmit={this.handleSettingsSubmit}
+							/>
+						</>
+					</div>
+					<div className="feed">
+						<ActivityFeed
+							currentTask={task.startedTime ? task : null}
+							history={taskHistory}
+						/>
+=======
+					<div className="content">{content}</div>
+					<div className="feed">
+						<ActivityFeed currentTask={task} history={taskHistory} />
+>>>>>>>
+					</div>
+				</div>
+			</div>
+		);
+	}
+}
