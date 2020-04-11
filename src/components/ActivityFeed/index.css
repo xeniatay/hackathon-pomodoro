@@ -1,0 +1,45 @@
+.activity-feed {
+	background-color: #fdfff8;
+	padding: 1em;
+}
+
+.activity-feed p.heading {
+    margin-top: 10px;
+}
+
+.activity-feed-header {
+    padding: 0 0 10px 0;
+}
+
+.task-cell {
+	border-bottom: 1px dotted gray;
+	padding: 10px;
+}
+
+.current-task-cell {
+	border: 2px solid #ccc;
+}
+
+.task-cell p {
+	color: #000;
+	font-weight: bold;
+	padding-top: 0 0 5px 0;
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+.task-cell p.task-name {
+	font-size: 1.2em;
+}
+
+.task-cell p span {
+}
+
+.task-cell p span.task-status {
+	float: right;
+	font-size: 30px;
+}
+
+.empty-state {
+	color: gray;
+}

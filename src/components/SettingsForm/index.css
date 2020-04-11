@@ -1,0 +1,21 @@
+.settings {
+	margin-top: 3em;
+}
+
+#settings-form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.break {
+	flex-basis: 100%;
+	width: 0;
+}
+
+.button-settings {
+	font-size: 1em;
+	width: auto;
+	margin-bottom: -7px;
+}
