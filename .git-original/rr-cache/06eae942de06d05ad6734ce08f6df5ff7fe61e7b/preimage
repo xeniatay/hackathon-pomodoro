@@ -1,0 +1,53 @@
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+
+import Button from "../Button";
+import Timer from "../Timer";
+
+import "./index.css";
+
+export default class WorkTimer extends Component {
+	static propTypes = {
+		/* Task that is being worked on */
+		task: PropTypes.shape({
+			description: PropTypes.string.isRequired
+		}),
+
+		taskHistory: PropTypes.array,
+
+		/* Event handler when pomodoro is aborted */
+		onAbort: PropTypes.func,
+
+		/* Event handler when pomodoro is completed */
+		onComplete: PropTypes.func
+	};
+
+	handleStop = e => {
+		if (
+			window.confirm("Are you sure you want to stop? This will break your Pomodoro streak!")
+		) {
+			this.props.onAbort && this.props.onAbort();
+		}
+	};
+
+	render() {
+		const {
+			task: { description: taskDescription },
+			taskHistory
+		} = this.props;
+
+		return (
+			<div className="work-timer">
+<<<<<<<
+				<p className="heading">{`Task #${taskHistory.length + 1} ${taskDescription}`}</p>
+=======
+				<p className="heading">{taskDescription}</p>
+>>>>>>>
+				<Timer lengthOfTimer={5000} onComplete={this.props.onComplete} />
+				<button className="button error" onClick={this.handleStop}>
+					Stop
+				</button>
+			</div>
+		);
+	}
+}

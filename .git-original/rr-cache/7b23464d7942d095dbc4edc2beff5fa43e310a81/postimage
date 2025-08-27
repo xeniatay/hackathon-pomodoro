@@ -1,0 +1,75 @@
+import React, { Component } from "react";
+import "./index.css";
+
+import GiphyComponent from "../GiphyComponent";
+
+class ResultPrompt extends Component {
+	handleOnChange = e => {
+		this.props.onTaskResultChange && this.props.onTaskResultChange(e);
+	};
+
+	render() {
+		return (
+			<div className="task-prompt">
+				How did your task go?
+				<textarea
+					className="result-input"
+					name="result"
+					rows="3"
+					maxLength="64"
+					onChange={this.handleOnChange}
+				/>
+				<button
+					type="button"
+					className="btn btn-success"
+					onClick={() => this.props.setStatus("SUCCESS")}
+				>
+					Success
+				</button>
+				<button
+					type="button"
+					className="btn btn-fail"
+					onClick={() => this.props.setStatus("FAILURE")}
+				>
+					Fail
+				</button>
+			</div>
+		);
+	}
+}
+
+class Result extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			status: "WAITING"
+		};
+	}
+
+	setStatus = status => {
+		this.setState({ ...this.state, status });
+	};
+
+	render() {
+		let component = <div />;
+		switch (this.state.status) {
+			case "SUCCESS":
+				component = <GiphyComponent success={true} />;
+				break;
+			case "FAILURE":
+				component = <GiphyComponent success={false} />;
+				break;
+			default:
+				component = (
+					<ResultPrompt
+						setStatus={this.setStatus}
+						onTaskResultChange={this.props.onTaskResultChange}
+					/>
+				);
+		}
+
+		return <div className="result-timer">{component}</div>;
+	}
+}
+
+export default Result;
