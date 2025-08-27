@@ -1,3 +1,8 @@
+[xeniatay.com/hackathon-pomodoro](https://xeniatay.com/hackathon-pomodoro/)
+
+---
+
+
 # Hackathon: Pomodoro Timer++ 
 ## Summary: 
 As a group, implement a pomodoro timer frontend in react, with task tracking and potentially activity feeds for streak/achievement tracking.  Intervals can be customized  Leverage the giphy API to pop up a gif Component to encourage or congratulate upon completion of a good streak.  The candidate will conduct a demo/Q&A session at the end of the day, talking through the project planning, decisions, and implementation.
